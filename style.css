@@ -19,7 +19,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;padding-right: 2rem;padding-left: 2rem;
 }
 
 header {
@@ -38,7 +38,7 @@ header {
 
 .container .section1 {
     width: 50%;
-
+align-content: center;
 }
 
 .container .section1 img {
@@ -53,12 +53,13 @@ header {
     flex-direction: column;
     color: white;
     gap: 20px;
+    padding-top: 3rem;
 }
 
 .container .section2 h2 {
     line-height: 1.8;
-    font-weight: 500;
-    font-size: 38px;
+    font-weight: 600;
+    font-size: 3.5vw;
 }
 
 .container .section2 button {
@@ -71,6 +72,7 @@ header {
     box-shadow: 0 0 5px var(--soft-magenta-color);
     border: none;
     transition: all 0.3s ease;
+
 }
 
 .container .section2 button:hover {
@@ -97,6 +99,8 @@ footer svg:hover {
     fill: var(--soft-magenta-color);
 }
 
+
+
 @media screen and (max-width:575px) {
     .container {
         flex-direction: column;
@@ -114,5 +118,9 @@ footer svg:hover {
 
     footer {
         justify-content: center;
+    }
+
+    .container .section2 h2{
+        font-size: 36px;
     }
 }
