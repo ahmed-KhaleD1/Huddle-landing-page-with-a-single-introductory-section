@@ -1,0 +1,118 @@
+:root {
+    --violet-color: hsl(257, 40%, 49%);
+    --soft-magenta-color: hsl(300, 69%, 71%);
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--violet-color);
+    background-image: url("./images/bg-desktop.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    padding-right: 3rem;
+    gap: 30px;
+
+}
+
+.container .section1 {
+    width: 50%;
+
+}
+
+.container .section1 img {
+    width: 100%;
+
+}
+
+
+.container .section2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+}
+
+.container .section2 h2 {
+    line-height: 1.8;
+    font-weight: 500;
+    font-size: 38px;
+}
+
+.container .section2 button {
+    background-color: white;
+    width: 180px;
+    height: 45px;
+    border-radius: 30px;
+    color: var(--violet-color);
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--soft-magenta-color);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.container .section2 button:hover {
+    background-color: var(--soft-magenta-color);
+    color: white;
+    box-shadow: 0 0 10px var(--soft-magenta-color);
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding: 2rem;
+    padding-right: 3rem;
+}
+
+footer svg {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    fill: white;
+}
+
+footer svg:hover {
+    fill: var(--soft-magenta-color);
+}
+
+@media screen and (max-width:575px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .section1 {
+        width: 100%;
+    }
+
+    .container .section2 {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer {
+        justify-content: center;
+    }
+}
